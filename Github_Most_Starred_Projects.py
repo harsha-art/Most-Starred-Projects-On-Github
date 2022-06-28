@@ -17,6 +17,7 @@ requested_dict = r.json()
 #We get a dictionary of the repos returned 
 repo_dicts = requested_dict['items']
 
+#We Run A Loop To Store The Necessary Info 
 repo_heads,stars,labels_on_bar = [],[],[]
 for repo_dict in repo_dicts:
 	repo_name = repo_dict['name']
